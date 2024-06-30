@@ -1,0 +1,163 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}
+
+<title>Petshop - Inicio</title>
+
+{% endblock title %}
+
+{% block styles %}
+
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+
+{% endblock styles %}
+
+{% block content %}
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'img/carousel/1.jpg' %}" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'img/carousel/2.jpg' %}" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'img/carousel/3.png' %}" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'img/carousel/4.png' %}" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+<div class="container-fluid mt-5 card-container">
+    <h4 class="titulo">Productos Recomendados</h4> 
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card mb-4">
+                <img src="img/card.braberi tarjeta 1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p>Bravery</p>
+                    <h5 class="card-title">Bravery Chicken Adult alimento para perro</h5>
+                    <br>
+                    <div class="precio">
+                        <p>$26.990 - $61.990</p>
+                    </div>
+                    <a href="producto1.html" class="btn btn-primary">Ver producto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+        <div class="col-md-3">
+            <div class="card mb-4">
+                <img src="img/card/braberi tarjeta 2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p>Bravery</p>
+                    <h5 class="card-title">Bravery Salmon Adult alimento para perro</h5>
+                    <br>
+                    <div class="precio">
+                        <p>$28.990 - $65.990</p>
+                    </div>
+                    <a href="producto1.html" class="btn btn-primary">Ver producto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+        <div class="col-md-3">
+            <div class="card mb-4">
+                <img src="img/card/braberi tarjeta 3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p>Bravery</p>
+                    <h5 class="card-title">Bravery Chicken Adult Cat alimento para gato</h5>
+                    <br>
+                    <div class="precio">
+                        <p>$21.990 - $51.990</p>
+                    </div>
+                    <a href="producto1.html" class="btn btn-primary">Ver producto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+        <div class="col-md-3">
+            <div class="card mb-4">
+                <img src="img/card/braberi tarjeta 4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p>Bravery</p>
+                    <h5 class="card-title">Bravery Salmon Adult Cat alimento para gat</h5>
+                    <br>
+                    <div class="precio">
+                        <p>$22.990 - $54.990</p>
+                    </div>
+                    <a href="producto1.html" class="btn btn-primary">Ver producto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+
+<h2 class="titulo">Las Marcas Favoritas de tus mascotas</h2>
+<div class="container-btn">
+    <a class="btn-container" href="">
+        <img src="{% static "img/botones/logo-nath.jpg" %}" alt="Imagen 1">
+    </a>
+    <a class="btn-container" href="">
+        <img src="{% static "img/botones/royal-canin.jpg" %}" alt="Imagen 2">
+    </a>
+    <a class="btn-container" href="">
+        <img src="{% static "img/botones/pro-plan.jpg" %}" alt="Imagen 3">
+    </a>
+    <a class="btn-container" href="">
+        <img src="{% static "img/botones/wellness-core.jpg" %}" alt="Imagen 4">
+    </a>
+    <a class="btn-container" href="">
+        <img src="{% static "img/botones/acana.jpg" %}" alt="Imagen 5">
+    </a>
+    <a class="btn-container" href="">
+        <img src="{% static "img/botones/bravery.jpg" %}" alt="Imagen 6">
+    </a>
+</div>
+
+<div class="separador">
+    <h2 class="titulo">Contacto</h2>
+</div>
+
+<div class="container2">
+    <form action="#" method="post">
+        <h2 class="form-title text-center"> Formulario de contacto </h2> 
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        </div>
+        <input type="submit" value="Enviar">
+    </form>
+    <div class="additional-content">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.8329208855153!2d-70.58351591605626!3d-33.401522904845805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf28a4680247%3A0x278141c17f8ab414!2sParque%20Arauco!5e0!3m2!1ses-419!2scl!4v1712889836670!5m2!1ses-419!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>
+{% endblock content %}

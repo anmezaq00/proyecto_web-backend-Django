@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+
+<title>Petshop - Registro</title>
+
+{% endblock title %}
+
+{% block styles %}
+
+<link rel="stylesheet" href="{% static 'css/registro.css' %}">
+
+{% endblock styles %}
+
+{% block content %}
+
+<div class="container register-container">
+    <div class="register-form">
+        <h2>Regístrate</h2>
+        <form id="registerForm">
+            <div class="mb-4">
+                <input type="text" class="form-control" id="newUsername" placeholder="Nombre de usuario" required>
+            </div>
+            <div class="mb-4">
+                <input type="email" class="form-control" id="email" placeholder="Correo electrónico" required>
+            </div>
+            <div class="mb-4">
+                <input type="password" class="form-control" id="newPassword" placeholder="Contraseña" required>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary">Registrarse</button>
+        </form>
+    </div>
+</div>
+
+{% endblock  %}

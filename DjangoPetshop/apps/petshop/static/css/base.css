@@ -1,0 +1,108 @@
+/* Estilos para el body*/
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: whitesmoke;
+}
+
+/*Estilos para el header y nav*/
+header {
+    background-color: none !important;
+}
+
+.navbar {
+    width: 100%;
+    position: sticky;
+}
+
+.navbar-brand img {
+    max-height: 100px;
+}
+
+.navbar-user {
+    margin-right: 50px;
+}
+
+/* Estilos para los enlaces */
+.nav-link {
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+/* Estilos para el menú desplegable */
+.dropdown-menu {
+    border-radius: 0;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+    color: #333;
+    font-weight: 400;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+}
+
+/* Estilos para el formulario de búsqueda */
+.form-control {
+    border-radius: 20px;
+}
+
+.btn-outline-success {
+    border-radius: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.active {
+    color: #007bff !important;
+    font-weight: 600;
+}
+
+/*Estilos para el footer*/
+footer {
+    color: #333;
+    background-color: #333 !important;
+}
+
+footer a {
+    color: #333;
+    text-decoration: none;
+}
+
+.container {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 15px;
+    border: none;
+    width: 100%;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .fa-map-marker-alt,
+footer .fa-phone,
+footer .fa-envelope {
+    margin-right: 10px;
+}
+
+footer .fab {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+footer .fab:hover {
+    color: #007bff;
+}

@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+
+<title>Petshop - Login</title>
+
+{% endblock title %}
+
+{% block styles %}
+
+<link rel="stylesheet" href="{% static 'css/login.css' %}">
+
+{% endblock styles %}
+
+{% block content %}
+<div class="container_login">
+<div class="container login-container">
+
+    <div class="login-form">
+        <h2>Iniciar Sesión</h2>
+        <form id="loginForm" method="POST">
+            <div class="mb-4">
+                <input type="text" class="form-control" id="username" placeholder="Nombre de usuario" required>
+            </div>
+            <div class="mb-4">
+                <input type="password" class="form-control" id="password" placeholder="Contraseña" required>
+            </div>
+            <div class="mb-4 form-check">
+                <input type="checkbox" class="form-check-input" id="rememberMe">
+                <label class="form-check-label" for="rememberMe">Recordarme</label>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+            <div id="errorMessage" class="text-danger mt-2" style="display: none;">Contraseña incorrecta</div>
+        </form>
+        <div class="forgot-password">
+            <br>
+            <a href="#">¿Olvidó la contraseña?</a>
+        </div>
+        <div class="create-account">
+            <p>¿No tiene una cuenta? <a href="registro.html" target="_blank">Regístrese aquí</a></p>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock  %}

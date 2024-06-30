@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}
+
+<title>Petshop - Producto 1</title>
+
+{% endblock title %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row">
+        {% for producto in productos  %}
+        <div class="card">
+        <div class="col-md-6" id="{{producto.sku}}">
+            <img src="{{producto.img.url}}" class="img-fluid" alt="Alimento para Perros">
+        </div>
+        <div class="col-md-6">
+            <h3 class="mb-4">{{producto.nombre}}</h3>
+            <p class="lead">{{producto.descripcion}}</p>
+            <p></p>
+            <hr>
+            <p>Precio: {{producto.precio}}</p>
+
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            <button class="btn btn-primary">Comprar Ahora</button>
+        </div>
+    </div>
+        {% endfor %}
+    </div>
+    <div class="row mt-5">
+        <div class="col">
+            <h2>Descripción Detallada</h2>
+            <p><strong>Chicken Adult de BRAVERY® Es un alimento con pollo para perros adultos de razas medianas y
+                    grandes.</strong> Libre de grano y cereales, además, de ser monoproteíco, con pollo siempre como
+                primer ingrediente y enriquecido con antioxidantes hipoalergénicos 100% naturales. Es una receta de
+                pollo de elevado contenido de proteínas, alta digestibilidad y palatabilidad, ideal para razas de
+                perros adultos medianos y grandes.</p>
+            <br>
+            <p>BRAVERY® Pet Food nació a partir de una consulta generalizada, a distribuidores y consumidores
+                finales, en la que se preguntaba cuál sería su propuesta para el mejor alimento para una mascota.
+                Acumulando todas las respuestas nace BRAVERY® un producto referente a nivel de calidad en el
+                segmento super Premium.</p>
+            <br>
+            <p><strong>Las ventajas de este producto son:</strong></p>
+            <ul>
+                <li><strong>Con Pollo:</strong> Carne de elevado contenido en proteínas de alto valor biológico, de
+                    alta digestibilidad y palatabilidad, además, es una carne baja en calorías y rica en ácidos
+                    grasos insaturados y vitaminas (niacina y ácido fólico)</li>
+                <br>
+                <li><strong>Con Tapioca:</strong> La tapioca es un alimento sumamente energético, fuente de hidratos
+                    de carbono altamente digestibles e idónea para dietas hipoalergénicas.</li>
+                <br>
+                <li><strong>Libre de Gluten:</strong> Elaborado sin cereales, ideal para perros alérgicos o con
+                    problemas digestivos.</li>
+                <br>
+                <li><strong>Salud Cardiovascular:</strong> La taurina es beneficiosa para la prevención de algunas
+                    cardiomiopatías, mientras que los ácidos grasos Omega-3 (EPA y DHA) ayudan a fortalecer la
+                    función cardíaca.</li>
+                <br>
+                <li><strong>Cuidado del Cuerpo:</strong>La condroitina y la glucosamina son componentes esenciales
+                    del cartílago con efectos complementarios para mantener una buena salud articular.</li>
+                <br>
+                <li><strong>Apoyo del Tracto Digestivo:</strong> La acción conjunta de FOS como prebiótico, MOS que
+                    afecta el control de microorganismos patógenos y fibras naturales (solubles e insolubles) con
+                    otro efecto que promueve la flora intestinal saludable y la digestión adecuada.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+
+{% block script %}
+
+{% endblock script %}

@@ -1,0 +1,125 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% block title %}
+    {% endblock title %}
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    {% block styles %}
+    {% endblock styles %}
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                    <a class="navbar-brand" href="/home">
+                        <img src="static/img/logo/logo.png"  alt=""> 
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="productos">Productos</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            opciones
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/perros">Perros</a></li>
+                                <li><a class="dropdown-item" href="/gatos">Gatos</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="art_aseo">Articulos Aseo mascotas</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a class="navbar-user" href="/">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+                            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+                        </svg>
+                    </a>
+                    <a class="navbar-user" href="/">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                        </svg>
+                    </a>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+<main class="container-main">
+    {% block content %}
+    {% endblock content %}   
+</main>
+
+<footer class="pt-4 pb-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Sobre Nosotros</h5>
+                <p>Somos una empresa dedicada a proporcionar soluciones innovadoras y de alta calidad. Nuestra misión es mejorar la vida de nuestros clientes a través de nuestros productos y servicios.</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Navegación</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-black">Inicio</a></li>
+                    <li><a href="#" class="text-black">Servicios</a></li>
+                    <li><a href="#" class="text-black">Productos</a></li>
+                    <li><a href="#" class="text-black">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Contacto</h5>
+                <p><i class="fas fa-map-marker-alt"></i> San Joaquin, Santiago, Chile</p>
+                <p><i class="fas fa-phone"></i> +569 4152 7890</p>
+                <p><i class="fas fa-envelope"></i> petshop@gmail.com</p>
+                <div>
+                    <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col text-center">
+                <p class="mb-0">&copy; 2024 Petshop. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+
+{% block script %}
+{% endblock script %}
+
+</html>

@@ -1,0 +1,105 @@
+.navbar-container {
+    border-radius: 10px;
+    padding-top: 5px;
+}
+
+.imagen-container {
+    margin-right: -70px;
+}
+
+.navbar-link {
+    font-size: 17px;
+}
+
+.btn-alimen {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.carrito {
+    margin-right: 30px
+}
+
+.carousel_tamano {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.anuncio_img {
+    border-radius: 20px;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.ds-collection {
+    text-align: center;
+    font-family: sans-serif;
+    /* Cambia la fuente del texto */
+    font-size: 60px;
+    /* Tamaño de la fuente */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Agrega sombra al texto */
+    color: #099ecb;
+    /* Color del texto */
+    font-weight: bold;
+    /* Hace el texto más grueso */
+    font-stretch: expanded;
+}
+
+.container-texto {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #333;
+    padding: 20px;
+
+}
+
+.boton-imagen__img {
+    width: 380px;
+    /* Ajusta el tamaño de las imágenes según sea necesario */
+    height: 300px;
+    /* Ajusta el tamaño de las imágenes según sea necesario */
+    border-radius: 20%;
+    /* Hace que los bordes de las imágenes sean más circulares */
+}
+
+.centrar-imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.margen-lateral {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.card {
+    display: flex;
+    /* Usar flexbox para alinear el contenido verticalmente */
+    flex-direction: column;
+    /* Aplicar dirección de columna para flexbox */
+    justify-content: center;
+    /* Centrar verticalmente */
+    align-items: center;
+    /* Centrar horizontalmente */
+    height: 100%;
+    /* Ajustar altura para flexbox */
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.card-img-top {
+    max-width: 100%;
+    /* Ancho máximo del contenedor */
+    height: 300px;
+    /* Altura automática para mantener la proporción */
+    width: 300px;
+    /* Ancho deseado para todas las imágenes */
+}
